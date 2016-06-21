@@ -1,0 +1,379 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #2e2e30;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+}
+
+/* Overwrite the default to keep the scrollbar always visible */
+/*
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+	width: 100%;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+*/
+
+h1{
+	font-size: 1.8rem;
+	font-weight: lighter;
+	margin-bottom: 20px;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+a:hover, a:active{
+	color: #ddd;
+}
+
+header{
+	font-size: 0;
+}
+
+.container{
+	width: 90%;
+	margin: 50px auto;
+}
+
+.btn{
+	background: #6b6c70;
+	padding: 10px 20px;
+	display: inline-block;
+	float: right;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.btn:hover{
+	background: #494a50;
+}
+
+.greeting{
+	width: 230px;
+	padding: 10px 20px;
+	background: #1472a0;
+	display: inline-block;
+	font-weight: normal;
+	font-size: 1.2rem;
+}
+
+.news{
+	margin-top: 30px;
+	font-size: 0;
+}
+
+.jumbotron{
+	width: 70%;
+	height: 300px;
+	display: inline-block;
+	vertical-align: top;
+	background: url(../images/pride.jpg);
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-position: center;
+	position: relative;
+	transition: background 0.5s ease;
+	-webkit-transition: background 0.5s ease;
+	-moz-transition: background 0.5s ease;
+	-o-transition: background 0.5s ease;
+}
+
+.headlines{
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+	font-size: 1rem;
+	background: #fff;
+}
+
+.headline{
+	padding: 15px 20px;
+	height: 70px;
+	transition: border 0.4s ease, font-weight 0.4s ease;
+	-webkit-transition: border 0.4s ease, font-weight 0.4s ease;
+	-moz-transition: border 0.4s ease, font-weight 0.4s ease;
+	-o-transition: border 0.4s ease, font-weight 0.4s ease;
+	position: relative;
+	display: block;
+	color: #000;
+}
+
+.headline:hover{
+	color: #666;
+}
+
+.headline-active{
+	font-weight: bold;
+	border-right: 5px solid #00bbd4;
+}
+
+.headline:nth-child(even){
+	background: #eee;
+}
+
+.counters{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: right;
+	width: 96%;
+	padding: 15px 2%;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.counter{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	display: inline-block;
+	background: #fff;
+	vertical-align: top;
+	transition: background 0.3s ease;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+}
+
+.counter:nth-child(2){
+	margin: 0 15px;
+}
+
+.counter:hover{
+	background: #ddd;
+}
+
+.counter-active, .counter-active:hover{
+	background: #00bbd4;
+}
+
+.cards{
+	font-size: 0;
+}
+
+.card{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 1rem;
+	width: 22%;
+	margin: 30px 0 0 4%;
+	min-height: 400px;
+	background: #fff;
+}
+
+.card-x2{
+	width: 48%;
+}
+
+.card:first-child{
+	margin: 30px 0 0 0;
+}
+
+/* background images for card covers */
+#help{ background: url(../images/shout.jpg); }
+#cinema{ background:url(../images/popcorn.jpg); }
+#football{ background:url(../images/child.jpg); }
+#clothes{ background:url(../images/store.jpg); }
+#music{ background:url(../images/concert.jpg); }
+#account{ background:url(../images/gears.jpg); }
+
+.card-cover{
+	background-size: cover !important;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-position: center !important;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 1.3rem;
+	text-shadow: 0px 0px 4px #000;
+}
+
+.card-content{
+	background: #fff;
+	padding: 15px 20px;
+	height: inherit;
+	color: #000;
+	overflow: scroll;
+	min-height: 270px;
+	max-height: 270px;
+}
+
+.card-content ul{
+	list-style: none;
+}
+
+.card-content li{
+	margin-top: 15px;
+}
+
+.card-content li:first-child{
+	margin: 0;
+}
+
+.card-content a{
+	color: #000;
+	display: block;
+}
+
+.card-content a:hover{
+	color: #666;
+}
+
+.card-content a i{
+	width: 2em;
+	height: 2em;
+	text-align: center;
+	font-size: 1.2rem;
+	color: #fff;
+	border-radius: 50%;
+	line-height: 2em;
+	margin-right: 10px;
+	background: #1472a0;
+}
+
+.card-content a:hover i{
+	background: #00bbd4;
+}
+
+.movie-list{
+	font-size: 0;
+}
+
+.movie{
+	margin-top: 20px;
+}
+
+.movie:first-child{
+	margin: 0;
+}
+
+.movie-poster, .movie-info{
+	display: inline-block;
+	vertical-align: top;
+	height: 100px;
+}
+
+.movie-poster{
+	width: 30%;
+	background-size: cover !important;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-position: center left !important;
+	background-repeat: no-repeat !important;
+}
+
+.movie-info{
+	font-size: 1rem;
+	width: 65%;
+	margin-left: 5%;
+	position: relative;
+	font-size: 0.9rem;
+}
+
+.movie-rating{
+	position: absolute;
+	bottom: 0;
+	color: #d8b25d;
+}
+
+
+
+@media screen and (max-width: 1024px){
+	.headlines{
+		font-size: 0.8rem;
+	}
+
+	.card{
+		width: 48%;
+		margin: 30px 0 0 4%;
+	}
+
+	.card-x2{
+		width: 100%;
+		margin: 30px 0 0 0;
+		min-height: 0;
+	}
+
+	.movie-info{
+		font-size: 1rem;
+	}
+
+	/* remove the horizontal margin on the first normal-width card in the second row div.
+	theres probably a much simpler way of doing this. */
+	.row:nth-child(2) .card:nth-child(2):not(.card-x2){
+		margin: 30px 0 0 0;
+	}
+}
+
+@media screen and (max-width: 768px){
+	h1{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.container{
+		margin: 30px auto;
+	}
+
+	.greeting{
+		width: 55%;
+		padding: 10px 5%;
+	}
+
+	.btn{
+		width: 24%;
+		padding: 10px 5%;
+	}
+
+	.jumbotron{
+		width: 100%;
+		display: block;
+	}
+
+	.counters{
+		width: 90%;
+		padding: 15px 5%;
+	}
+
+	.headlines{
+		width: 100%;
+		display: block;
+		font-size: 1rem;
+	}
+
+	.desktop{
+		display: none;
+	}
+
+	.card{
+		width: 100%;
+		margin: 30px 0 0 0;
+		min-height: 0;
+	}
+
+	.card-cover{
+		font-size: 1.4rem;
+	}
+
+	.card-content{
+		min-height: initial;
+		max-height: initial;
+	}
+}
