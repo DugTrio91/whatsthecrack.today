@@ -43,6 +43,20 @@ header{
 	font-size: 0;
 }
 
+.header-logo{
+    background: url(../images/logo.png) center no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    height:200px;
+    transition: all .2s ease-in-out;
+}
+
+.header-logo:hover{
+    transform: rotate(-5deg)
+}
+
 .container{
 	width: 90%;
 	margin: 50px auto;
@@ -91,6 +105,8 @@ header{
 	-webkit-transition: background 0.5s ease;
 	-moz-transition: background 0.5s ease;
 	-o-transition: background 0.5s ease;
+    border-radius: 10px 0px 0px 10px;
+
 }
 
 .headlines{
@@ -99,6 +115,8 @@ header{
 	vertical-align: top;
 	font-size: 1rem;
 	background: #fff;
+    border-radius: 0px 10px 10px 0px;
+
 }
 
 .headline{
@@ -119,7 +137,7 @@ header{
 
 .headline-active{
 	font-weight: bold;
-	border-right: 5px solid #00bbd4;
+	border-left: 5px solid #1472a0;
 }
 
 .headline:nth-child(even){
@@ -158,7 +176,7 @@ header{
 }
 
 .counter-active, .counter-active:hover{
-	background: #00bbd4;
+	background: #1472a0;
 }
 
 .cards{
@@ -173,6 +191,7 @@ header{
 	margin: 30px 0 0 4%;
 	min-height: 400px;
 	background: #fff;
+    border-radius: 12px;
 }
 
 .card-x2{
@@ -200,8 +219,15 @@ header{
 	height: 100px;
 	line-height: 100px;
 	text-align: center;
-	font-size: 1.3rem;
-	text-shadow: 0px 0px 4px #000;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.card-cover p{
+    font-size: 1rem;
+	text-shadow: 0px 0px 2px #000;
+    outline: 2px solid #fff;
+    outline-offset: -35px;
 }
 
 .card-content{
@@ -236,8 +262,8 @@ header{
 }
 
 .card-content a i{
-	width: 2em;
-	height: 2em;
+	width: 1.8em;
+	height: 1.8em;
 	text-align: center;
 	font-size: 1.2rem;
 	color: #fff;
@@ -275,7 +301,7 @@ header{
 	-webkit-background-size: cover !important;
 	-moz-background-size: cover !important;
 	-o-background-size: cover !important;
-	background-position: center left !important;
+	background-position: center !important;
 	background-repeat: no-repeat !important;
 }
 
@@ -289,7 +315,7 @@ header{
 
 .movie-rating{
 	position: absolute;
-	bottom: 0;
+	bottom: 0px;
 	color: #d8b25d;
 }
 
