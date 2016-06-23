@@ -7,6 +7,9 @@ body{
 	background: #2e2e30;
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
+    transition: background .25s ease-in-out;
+   -moz-transition: background .25s ease-in-out;
+   -webkit-transition: background .25s ease-in-out;
 }
 
 /* Overwrite the default to keep the scrollbar always visible */
@@ -72,7 +75,11 @@ header{
 	display: inline-block;
 	float: right;
 	text-align: center;
-	font-size: 1.2rem;
+	font-size: 1.2rem;   
+}
+
+.btn:not(.desktop){
+    border-radius: 0px 10px 10px 0px;
 }
 
 .btn:hover{
@@ -86,6 +93,7 @@ header{
 	display: inline-block;
 	font-weight: normal;
 	font-size: 1.2rem;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .news{
@@ -184,6 +192,13 @@ header{
 
 .cards{
 	font-size: 0;
+}
+
+.button-content{
+    display: none;
+    margin: 10px 0px 0px 46px;
+    color: dimgray;
+    font-size: 0.9rem;
 }
 
 .card{
@@ -321,7 +336,25 @@ header{
 	color: #d8b25d;
 }
 
+.russel-foster{
+    width: 100%;
+    text-align: center;
+}
 
+.left-col{
+    text-align: right;
+    max-width: 100px;
+}
+
+.green-v{
+    color: #49ab80;
+    padding: 0px 20px;
+}
+
+.right-col{
+    text-align: left;
+    max-width: 100px;
+}
 
 @media screen and (max-width: 1024px){
 	.headlines{
