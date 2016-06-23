@@ -122,10 +122,10 @@ header{
 .headline{
 	padding: 15px 20px;
 	height: 70px;
-	transition: border 0.4s ease, font-weight 0.4s ease;
-	-webkit-transition: border 0.4s ease, font-weight 0.4s ease;
-	-moz-transition: border 0.4s ease, font-weight 0.4s ease;
-	-o-transition: border 0.4s ease, font-weight 0.4s ease;
+	transition: border 0.4s ease;
+	-webkit-transition: border 0.4s;
+	-moz-transition: border 0.4s ease;
+	-o-transition: border 0.4s ease;
 	position: relative;
 	display: block;
 	color: #000;
