@@ -358,6 +358,10 @@ header{
 		margin: 30px auto;
 	}
 
+	.header-logo{
+		margin-bottom: 30px;
+	}
+
 	.greeting{
 		width: 55%;
 		padding: 10px 5%;
