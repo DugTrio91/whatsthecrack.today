@@ -49,12 +49,16 @@ header{
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
-    height:200px;
+    height: 200px;
     transition: all .2s ease-in-out;
 }
 
 .header-logo:hover{
-    transform: rotate(-5deg)
+    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg)
+    -moz-transform: rotate(-5deg)
+    -ms-transform: rotate(-5deg)
+    -o-transform: rotate(-5deg)
 }
 
 .container{
