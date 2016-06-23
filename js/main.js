@@ -98,7 +98,13 @@ $(document).ready(function(){
 					movieRating: data.imdbRating
 				});
 
-				outputMovie(movies[keys.indexOf(key)]);
+				//when the movies array is fully populated
+				if(movies.length === keys.length){
+					for(var i = 0; i < movies.length; i++){
+						//display info for each movie
+						outputMovie(movies[i]);
+					}
+				}
 			},
 			error: function(data){
 				alert("An error has occured");
