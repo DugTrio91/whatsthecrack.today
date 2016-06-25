@@ -7,9 +7,9 @@ body{
 	background: #2e2e30;
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
-    transition: background .25s ease-in-out;
-   -moz-transition: background .25s ease-in-out;
-   -webkit-transition: background .25s ease-in-out;
+    transition: background 1s ease-in-out;
+   -moz-transition: background 1s ease-in-out;
+   -webkit-transition: background 1s ease-in-out;
 }
 
 /* Overwrite the default to keep the scrollbar always visible */
@@ -201,6 +201,17 @@ header{
     font-size: 0.9rem;
 }
 
+.mobile-help-button{
+    width:100%;
+    height:50px;
+    background-color: #b83c3c;
+    text-align: center;
+    margin-top:30px;
+    padding-top:10px;
+    border-radius: 10px;
+    display: none;  
+}
+
 .card{
 	display: inline-block;
 	vertical-align: top;
@@ -219,12 +230,12 @@ header{
 }
 
 /* background images for card covers */
-#help{ background: url(../images/shout.jpg); }
-#cinema{ background:url(../images/popcorn.jpg); }
-#football{ background:url(../images/child.jpg); }
-#clothes{ background:url(../images/store.jpg); }
-#music{ background:url(../images/concert.jpg); }
-#account{ background:url(../images/gears.jpg); }
+#help{ background: url(../images/shout.jpg) no-repeat; }
+#cinema{ background:url(../images/popcorn.jpg) no-repeat; }
+#football{ background:url(../images/child.jpg) no-repeat; }
+#clothes{ background:url(../images/store.jpg) no-repeat; }
+#music{ background:url(../images/concert.jpg) no-repeat; }
+#account{ background:url(../images/gears.jpg) no-repeat; }
 
 .card-cover{
 	background-size: cover !important;
@@ -241,9 +252,10 @@ header{
 
 .card-cover p{
     font-size: 1rem;
-	text-shadow: 0px 0px 2px #000;
-    outline: 2px solid #fff;
-    outline-offset: -35px;
+    text-shadow: 2px 2px 3px rgba(100, 100, 100, 1);
+    outline: 2px solid;
+    outline-offset: -38px;
+    filter: opacity(90%)
 }
 
 .card-content{
@@ -278,7 +290,7 @@ header{
 	color: #666;
 }
 
-.card-content a i{
+.card-content a i:not(.colour-button i){
 	width: 1.8em;
 	height: 1.8em;
 	text-align: center;
@@ -290,7 +302,7 @@ header{
 	background: #1472a0;
 }
 
-.card-content a:hover i{
+.card-content a:hover i:not(.colour-button i){
 	background: #00bbd4;
 }
 
@@ -356,14 +368,34 @@ header{
     max-width: 100px;
 }
 
+.filters{
+    text-align: center;
+}
+.clothes-filter{
+    display: inline-block;
+    padding: 2px 1%;
+    margin: 0px auto;
+}
+
+.clothes-filter select{
+    background-color: #2e2e30;
+    color: #f5f5f5;
+    font-size: 15px;
+}
+
 @media screen and (max-width: 1024px){
 	.headlines{
 		font-size: 0.8rem;
 	}
-
-	.card{
+    
+     .mobile-help-button{
+        display: block;
+    }
+    
+    .card{
 		width: 48%;
-		margin: 30px 0 0 4%;
+		margin: 30px 2% 0 0;
+		min-height: 0;
 	}
 
 	.card-x2{

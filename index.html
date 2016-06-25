@@ -48,86 +48,18 @@
 			</a>
             </div>
         </div>
-
+        <div class="mobile-help-button">
+            <a href="#mobile-help"><h1>Need Advice?</h1></a>
+        </div>
         <div class="cards">
             <div class="row">
-                <div class="card">
-                    <div class="card-cover" id="help">
-                        <p>Information</p>
-                    </div>
-                    <div class="card-content">
-                        <ul>
-                            <div class="button-section">
-                                <a class="button-container" title="Sexual Health">
-                                    <i class="fa fa-venus-mars"></i>Sexual Health
-                                </a>
-                                <div class="button-content">
-                                    <ul>
-                                        <li><a href="#">ITEM 1</a></li>
-                                        <li><a href="#">ITEM 2</a></li>
-                                        <li><a href="#">ITEM 3</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <li>
-                                <div class="button-section">
-                                    <a class="button-container" title="Accomodation">
-                                        <i class="fa fa-home"></i>Accomodation</a>
-                                    <div class="button-content">
-                                        <ul>
-                                            <li><a href="#">ITEM 1</a></li>
-                                            <li><a href="#">ITEM 2</a></li>
-                                            <li><a href="#">ITEM 3</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="button-section">
-                                    <a class="button-container" title="Find a job">
-                                        <i class="fa fa-search"></i>Find a job</a>
-                                    <div class="button-content">
-                                        <ul>
-                                            <li><a href="#">ITEM 1</a></li>
-                                            <li><a href="#">ITEM 2</a></li>
-                                            <li><a href="#">ITEM 3</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="button-section">
-                                    <a class="button-container" title="Concerned?">
-                                        <i class="fa fa-question"></i>Concerned?</a>
-                                    <div class="button-content">
-                                        <ul>
-                                            <li><a href="#">About a friend</a></li>
-                                            <li><a href="#">Feeling depressed</a></li>
-                                            <li><a href="#">Talk to someone</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                    <li>
-                                        <a href="https://www.facebook.com/whatsthecrack.today/" class="button-container" title="Facebook">
-                                        <i class="fa fa-facebook"></i>Facebook</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/whatsthecrackTo" class="button-container" title="Twitter">
-                                        <i class="fa fa-twitter"></i>Twitter</a>
-                                    </li>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                <div class="card">
+                <div id="cinema" class="card">
                     <div class="card-cover" id="cinema">
                         <p>Cinema</p>
                     </div>
                     <div class="card-content movie-list"></div>
                 </div>
-
-                <div class="card card-x2">
+                <div id="football" class="card card-x2">
                     <div class="card-cover" id="football">
                         <p>Russel Foster League</p>
                     </div>
@@ -202,19 +134,7 @@
                         </table>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="card card-x2">
-                    <div class="card-cover" id="clothes">
-                        <p>Clothing</p>
-                    </div>
-                    <div class="card-content">
-
-                    </div>
-                </div>
-
-                <div class="card">
+                <div id="music" class="card">
                     <div class="card-cover" id="music">
                         <p>Live Music</p>
                     </div>
@@ -222,8 +142,115 @@
 
                     </div>
                 </div>
+            </div>
+            <div class="row">
+                <div id="clothing" class="card card-x2">
+                    <div class="card-cover" id="clothes">
+                        <p>Clothing</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="filters">
+                            <form class="clothes-filter gender-filter">
+                                <select>
+                                    <optgroup label="Gender">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                        <option>Both</option>
+                                </select>
+                            </form>
+                            <form class="clothes-filter category-filter">
+                                <select>
+                                    <optgroup label="Category">
+                                        <option>Dresses</option>
+                                        <option>T-Shirts</option>
+                                        <option>Tops &amp; Shirts</option>
+                                        <option>Jeans</option>
+                                        <option>Shorts</option>
+                                        <option>Swimwear</option>
+                                        <option>Nightwear</option>
+                                </select>
+                            </form>
+                            <form class="clothes-filter sort-filter">
+                                <select>
+                                    <optgroup label="Sort by">
+                                        <option>Price (low - high)</option>
+                                        <option>Price (high - low)</option>
+                                </select>
+                            </form>
 
-                <div class="card">
+                        </div>
+                    </div>
+                </div>
+                <a name="mobile-help"></a>
+                <div id="informtion" class="card">
+                    <div class="card-cover" id="help">
+                        <p>Information</p>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <div class="button-section">
+                                <a class="button-container" title="Sexual Health">
+                                    <i class="fa fa-venus-mars"></i>Sexual Health
+                                </a>
+                                <div class="button-content">
+                                    <ul>
+                                        <li><a href="#">ITEM 1</a></li>
+                                        <li><a href="#">ITEM 2</a></li>
+                                        <li><a href="#">ITEM 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <li>
+                                <div class="button-section">
+                                    <a class="button-container" title="Accomodation">
+                                        <i class="fa fa-home"></i>Accomodation</a>
+                                    <div class="button-content">
+                                        <ul>
+                                            <li><a href="#">ITEM 1</a></li>
+                                            <li><a href="#">ITEM 2</a></li>
+                                            <li><a href="#">ITEM 3</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button-section">
+                                    <a class="button-container" title="Find a job">
+                                        <i class="fa fa-search"></i>Find a job</a>
+                                    <div class="button-content">
+                                        <ul>
+                                            <li><a href="#">ITEM 1</a></li>
+                                            <li><a href="#">ITEM 2</a></li>
+                                            <li><a href="#">ITEM 3</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button-section">
+                                    <a class="button-container" title="Concerned?">
+                                        <i class="fa fa-question"></i>Concerned?</a>
+                                    <div class="button-content">
+                                        <ul>
+                                            <li><a href="#">About a friend</a></li>
+                                            <li><a href="#">Feeling depressed</a></li>
+                                            <li><a href="#">Talk to someone</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <li>
+                                    <a href="https://www.facebook.com/whatsthecrack.today/" class="button-container" title="Facebook">
+                                        <i class="fa fa-facebook"></i>Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/whatsthecrackTo" class="button-container" title="Twitter">
+                                        <i class="fa fa-twitter"></i>Twitter</a>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="settings" class="card">
                     <div class="card-cover" id="account">
                         <p>Settings</p>
                     </div>
@@ -232,24 +259,44 @@
                             <a class="button-container" title="Page Colour">
                                 <i class="fa fa-paint-brush"></i>Page Colour
                             </a>
-                            <div class="button-content">
+                            <div class="colour-button button-content">
                                 <ul>
-                                    <li><a class="default">Noir (default)</a></li>
-                                    <li><a class="peach-echo">Peach Echo</a></li>
-                                    <li><a class="fiesta">Fiesta</a></li>
-                                    <li><a class="green-flash">Green Flash</a></li>
-                                    <li><a class="limpet-shell">Limpet Shell</a></li>
-                                    <li><a class="snorkel-blue">Snorkel Blue</a></li>
-                                    <li><a class="buttercup">Buttercup</a></li>
+                                    <li>
+                                        <a class="default"><i class="fa fa-circle" style="color:#2e2e30;" aria-hidden="true"></i> Noir (default)</a>
+                                    </li>
+                                    <li>
+                                        <a class="peach-echo"><i class="fa fa-circle" style="color:#f27271;" aria-hidden="true"></i> Peach Echo</a>
+                                    </li>
+                                    <li>
+                                        <a class="fiesta"><i class="fa fa-circle" style="color:#e93c45;" aria-hidden="true"></i> Fiesta</a>
+                                    </li>
+                                    <li>
+                                        <a class="green-flash"><i class="fa fa-circle" style="color:#6bc06f;" aria-hidden="true"></i> Green Flash</a>
+                                    </li>
+                                    <li>
+                                        <a class="limpet-shell"><i class="fa fa-circle" style="color:#93d5d5;" aria-hidden="true"></i> Limpet Shell</a>
+                                    </li>
+                                    <li>
+                                        <a class="snorkel-blue"><i class="fa fa-circle" style="color:#075385;" aria-hidden="true"></i> Snorkel Blue</a>
+                                    </li>
+                                    <li>
+                                        <a class="buttercup"><i class="fa fa-circle" style="color:#f5e472;" aria-hidden="true"></i> Buttercup</a>
+                                    </li>
                                 </ul>
                             </div>
+                            <!--/colour button content-->
                         </div>
+                        <!--/colour button-->
                     </div>
+                    <!--/card content-->
                 </div>
+                <!--/card-->
             </div>
+            <!--/row-->
         </div>
-
+        <!--/cards-->
     </div>
+    <!--/container-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="js/main.js"></script>
