@@ -131,7 +131,7 @@ $(document).ready(function () {
                 //push needed data to movies array
                 movies.push({
                     movieTitle: data.Title,
-                    moviePoster: data.Poster,
+                    moviePoster: "images/posters/" + key + ".jpg",
                     movieRating: data.imdbRating
                 });
 
