@@ -25,7 +25,7 @@
             </a>
             <h2 class="greeting">Hi, Cameron!</h2>
             <a class="btn" href="#" title="Logout">Logout</a>
-            <a class="btn desktop" href="#" title="Settings">Settings</a>
+            <a class="btn desktop" href="#settings" title="Settings">Settings</a>
         </header>
 
         <div class="news">
@@ -330,7 +330,66 @@
                         <p>Live Music</p>
                     </div>
                     <div class="card-content">
-
+                        <table class="live-music-event">
+                            <tr>
+                                <td class="day">Tues</th>
+                                <td class="event-info" rowspan="2">
+                                    Nelly - Live In Concert
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="date">08</td>
+                            </tr>
+                            <tr>
+                                <td class="time">19:00</td>
+                                <td class="venue">O2 Academy</td>
+                            </tr>
+                        </table>
+                        <table class="live-music-event">
+                            <tr>
+                                <td class="day">Fri</th>
+                                <td class="event-info" rowspan="2">
+                                    Prysm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="date">11</td>
+                            </tr>
+                            <tr>
+                                <td class="time">18:30</td>
+                                <td class="venue">The Social Room</td>
+                            </tr>
+                        </table>
+                        <table class="live-music-event">
+                            <tr>
+                                <td class="day">Mon</th>
+                                <td class="event-info" rowspan="2">
+                                    AFTRMTH: The Summer Sessions
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="date">14</td>
+                            </tr>
+                            <tr>
+                                <td class="time">20:00</td>
+                                <td class="venue">GALA Durham</td>
+                            </tr>
+                        </table>
+                        <table class="live-music-event">
+                            <tr>
+                                <td class="day">Thur</th>
+                                <td class="event-info" rowspan="2">
+                                    Animals As Leaders
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="date">17</td>
+                            </tr>
+                            <tr>
+                                <td class="time">19:00</td>
+                                <td class="venue">O2 Academy</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
 
@@ -409,38 +468,54 @@
                 </div>
                 <div class="card">
                     <div class="card-cover" id="account">
+                        <a name="settings"></a>
                         <p>Settings</p>
                     </div>
 
                     <div class="card-content">
                         <div class="button-section">
-                            <a class="button-container" title="Page Colour">
-                                <i class="fa fa-paint-brush"></i>Page Colour
-                            </a>
-                            <div class="colour-button button-content">
-                                <ul>
-                                    <li>
-                                        <a class="default"><i class="fa fa-circle" style="color:#2e2e30;" aria-hidden="true"></i> Noir (default)</a>
-                                    </li>
-                                    <li>
-                                        <a class="peach-echo"><i class="fa fa-circle" style="color:#f27271;" aria-hidden="true"></i> Peach Echo</a>
-                                    </li>
-                                    <li>
-                                        <a class="fiesta"><i class="fa fa-circle" style="color:#e93c45;" aria-hidden="true"></i> Fiesta</a>
-                                    </li>
-                                    <li>
-                                        <a class="green-flash"><i class="fa fa-circle" style="color:#6bc06f;" aria-hidden="true"></i> Green Flash</a>
-                                    </li>
-                                    <li>
-                                        <a class="limpet-shell"><i class="fa fa-circle" style="color:#93d5d5;" aria-hidden="true"></i> Limpet Shell</a>
-                                    </li>
-                                    <li>
-                                        <a class="snorkel-blue"><i class="fa fa-circle" style="color:#075385;" aria-hidden="true"></i> Snorkel Blue</a>
-                                    </li>
-                                    <li>
-                                        <a class="buttercup"><i class="fa fa-circle" style="color:#f5e472;" aria-hidden="true"></i> Buttercup</a>
-                                    </li>
-                                </ul>
+                            <ul>
+                                <li>
+                                    <a class="button-container" title="Page Colour">
+                                        <i class="fa fa-paint-brush"></i>Page Colour
+                                    </a>
+                                    <div class="colour-button button-content">
+                                        <ul>
+                                            <li>
+                                                <a class="default"><i class="fa fa-circle" style="color:#2e2e30;" aria-hidden="true"></i> Noir (default)</a>
+                                            </li>
+                                            <li>
+                                                <a class="peach-echo"><i class="fa fa-circle" style="color:#f27271;" aria-hidden="true"></i> Peach Echo</a>
+                                            </li>
+                                            <li>
+                                                <a class="fiesta"><i class="fa fa-circle" style="color:#e93c45;" aria-hidden="true"></i> Fiesta</a>
+                                            </li>
+                                            <li>
+                                                <a class="green-flash"><i class="fa fa-circle" style="color:#6bc06f;" aria-hidden="true"></i> Green Flash</a>
+                                            </li>
+                                            <li>
+                                                <a class="limpet-shell"><i class="fa fa-circle" style="color:#93d5d5;" aria-hidden="true"></i> Limpet Shell</a>
+                                            </li>
+                                            <li>
+                                                <a class="snorkel-blue"><i class="fa fa-circle" style="color:#075385;" aria-hidden="true"></i> Snorkel Blue</a>
+                                            </li>
+                                            <li>
+                                                <a class="buttercup"><i class="fa fa-circle" style="color:#f5e472;" aria-hidden="true"></i> Buttercup</a>
+                                            </li>
+                                        </ul>
+                                        <li>
+                                            <a href="#" class="button-container" title="Update-Details">
+                                                <i class="fa fa-user"></i>Update Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="button-container" title="change-password">
+                                                <i class="fa fa-lock"></i>Change Password</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="button-container" title="Update-Details">
+                                                <i class="fa fa-user-times"></i>Delete Account</a>
+                                        </li>
+                            </ul>
                             </div>
                             <!--/colour button content-->
                         </div>
