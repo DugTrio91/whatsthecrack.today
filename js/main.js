@@ -56,6 +56,9 @@ $(document).ready(function () {
         $(this).find(".button-content").slideToggle();
     });
     
+    //Loop quick links on site top
+   
+    
     //Background colours
     $('.default').click(function () {
         $('body').css("background", "#2e2e30");
@@ -84,6 +87,8 @@ $(document).ready(function () {
     $('.buttercup').click(function () {
         $('body').css("background", "#f5e472");
     });
+    
+    
 
     //store movie information
     var movies = [];
@@ -175,3 +180,20 @@ $(document).ready(function () {
     }
 
 });
+
+(function () {
+
+        var qlink = $(".quick-link");
+        var qlinkIndex = -1;
+
+        function showNextQlink() {
+            ++qlinkIndex;
+            qlink.eq(qlinkIndex % qlink.length)
+                .fadeIn(200)
+                .delay(4800)
+                .fadeOut(200, showNextQlink);
+        }
+
+        showNextQlink();
+
+    })();

@@ -190,7 +190,7 @@ header{
 	background: #1472a0;
 }
 
-.mobile-help-button{
+.mobile-help-button, .quick-links-banner{
     width:100%;
     height:50px;
     background-color: #b83c3c;
@@ -198,8 +198,17 @@ header{
     margin-top:30px;
     padding-top:10px;
     border-radius: 10px;
-    display: none;
-    
+    display: none;  
+}
+
+.quick-links-banner{
+    display: block;
+    height:auto;
+    background-color: #1472a0;
+}
+
+.quick-links-banner p{
+    padding: 0px 10px 10px 10px;
 }
 
 .cards{
@@ -236,6 +245,10 @@ header{
     
 .mobile-help{
     display: none;
+}
+
+.quick-link{
+    display: none
 }
 
 /* background images for card covers */
@@ -392,6 +405,23 @@ header{
     font-size: 15px;
 }
 
+.clothes-container{
+    width:44%;
+    margin:10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.clothes-image{
+    float: left;
+    margin-right: 10px;
+}
+.clothes-image img{
+    width:100px;
+}
+
+
+
 @media screen and (max-width: 1024px){
 	.headlines{
 		font-size: 0.8rem;
@@ -479,10 +509,14 @@ header{
 		font-size: 1.4rem;
 	}
 
-	.card-content{
+    .card-content:not(.clothes-content){
 		min-height: initial;
 		max-height: initial;
 	}
+    
+    .clothes-container{
+        width:90%;
+}
     
     .desktop-help{
         display: none;

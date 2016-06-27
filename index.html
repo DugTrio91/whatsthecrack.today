@@ -13,8 +13,8 @@
 <body>
 
     <!--Delete this container when complete-->
-    <div class="test-banner" style="position: absolute; top:0; width:100%; background-color: black; text-align: center;">
-        <p>Test Preview</p>
+    <div class="test-banner" style="position: fixed; top:0; z-index:99; width:100%; background-color: black; text-align: center;">
+        <h2>Test Preview</h2>
     </div>
 
     <div class="container">
@@ -48,7 +48,18 @@
 			</a>
             </div>
         </div>
-    <a class="mobile-help-button" href="#mobile-help"><h1>Need Advice?</h1></a>
+        <div class="quick-links-banner">
+            <div class="quick-link">
+                <p><a href="#">Looking for a course, apprenticeship or job? Click here.</a></p>
+            </div>
+            <div class="quick-link">
+                <p><a href="#">Need advice about sexual health? Click here.</a></p>
+            </div>
+            <div class="quick-link">
+                <p><a href="#">Concerned about a friends behaviour? Click here.</a></p>
+            </div>
+        </div>
+        <a class="mobile-help-button" href="#mobile-help"><h1>Need Advice?</h1></a>
         <div class="cards">
             <div class="row">
                 <div class="card desktop-help">
@@ -107,6 +118,10 @@
                                         </ul>
                                     </div>
                                 </div>
+                                <li>
+                                    <a href="mailto:stephen@whatsthecrack.today" class="button-container" title="Email">
+                                        <i class="fa fa-envelope"></i>Contact us</a>
+                                </li>
                                 <li>
                                     <a href="https://www.facebook.com/whatsthecrack.today/" class="button-container" title="Facebook">
                                         <i class="fa fa-facebook"></i>Facebook</a>
@@ -209,37 +224,103 @@
                     <div class="card-cover" id="clothes">
                         <p>Clothing</p>
                     </div>
-                    <div class="card-content">
+                    <div class="card-content clothes-content">
                         <div class="filters">
                             <form class="clothes-filter gender-filter">
                                 <select>
-                                   <optgroup label="Gender">
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                    <option>Both</option>
+                                    <optgroup label="Gender">
+                                        <option>All</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
                                 </select>
                             </form>
                             <form class="clothes-filter category-filter">
                                 <select>
-                                   <optgroup label="Category">
-                                    <option>Dresses</option>
-                                    <option>T-Shirts</option>
-                                    <option>Tops &amp; Shirts</option>
-                                    <option>Jeans</option>
-                                    <option>Shorts</option>
-                                    <option>Swimwear</option>
-                                    <option>Nightwear</option>
+                                    <optgroup label="Category">
+                                        <option>All</option>
+                                        <option>Dresses</option>
+                                        <option>T-Shirts</option>
+                                        <option>Tops &amp; Shirts</option>
+                                        <option>Jeans</option>
+                                        <option>Shorts</option>
+                                        <option>Swimwear</option>
+                                        <option>Nightwear</option>
                                 </select>
                             </form>
                             <form class="clothes-filter sort-filter">
                                 <select>
-                                   <optgroup label="Sort by">
-                                    <option>Price (low - high)</option>
-                                    <option>Female</option>
-                                    <option>Both</option>
+                                    <optgroup label="Sort by">
+                                        <option>Price (high - low)</option>
+                                        <option>Price (low - high)</option>
+                                        <option>Nearest first</option>
                                 </select>
                             </form>
-
+                        </div>
+                        <div class="clothes-results">
+                            <div class="clothes-container">
+                                <div class="clothes-image">
+                                    <a href="#"><img src="images/clothes/dress.jpg"></a>
+                                </div>
+                                <div class="clothes-details">
+                                    <a href="#">Ladies M&amp;S PerUna Summer Dress - Size 16 <br><strong>£25.00</strong></a>
+                                </div>
+                            </div>
+                            <div class="clothes-container">
+                                <div class="clothes-image">
+                                    <a href="#"><img src="images/clothes/tee.jpg"></a>
+                                </div>
+                                <div class="clothes-details">
+                                    <a href="#">Armanu mens polo shirt T-shirt black S <br><strong>£22.00</strong></a>
+                                </div>
+                            </div>
+                            <div class="clothes-container">
+                                <div class="clothes-image">
+                                    <a href="#"><img src="images/clothes/shoes.jpg"></a>
+                                </div>
+                                <div class="clothes-details">
+                                    <a href="#">Next Nude Zip Up Ankle Boot Heel Shoes <br><strong>£20.00</strong></a>
+                                </div>
+                            </div>
+                            <div class="clothes-container">
+                                <div class="clothes-image">
+                                    <a href="#"><img src="images/clothes/watch.jpg"></a>
+                                </div>
+                                <div class="clothes-details">
+                                    <a href="#">RLX DESIGN Automatic Mechanical Steel Watch <br><strong>£16.00</strong></a>
+                                </div>
+                            </div>
+                            <div class="clothes-container">
+                                <div class="clothes-image">
+                                    <a href="#"><img src="images/clothes/dress.jpg"></a>
+                                </div>
+                                <div class="clothes-details">
+                                    <a href="#">Ladies M&amp;S PerUna Summer Dress - Size 16 <br><strong>£25.00</strong></a>
+                                </div>
+                            </div>
+                            <div class="clothes-container">
+                                <div class="clothes-image">
+                                    <a href="#"><img src="images/clothes/tee.jpg"></a>
+                                </div>
+                                <div class="clothes-details">
+                                    <a href="#">Armanu mens polo shirt T-shirt black S <br><strong>£22.00</strong></a>
+                                </div>
+                            </div>
+                            <div class="clothes-container">
+                                <div class="clothes-image">
+                                    <a href="#"><img src="images/clothes/shoes.jpg"></a>
+                                </div>
+                                <div class="clothes-details">
+                                    <a href="#">Next Nude Zip Up Ankle Boot Heel Shoes <br><strong>£20.00</strong></a>
+                                </div>
+                            </div>
+                            <div class="clothes-container">
+                                <div class="clothes-image">
+                                    <a href="#"><img src="images/clothes/watch.jpg"></a>
+                                </div>
+                                <div class="clothes-details">
+                                    <a href="#">RLX DESIGN Automatic Mechanical Steel Watch <br><strong>£16.00</strong></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -252,9 +333,9 @@
 
                     </div>
                 </div>
-                
+
                 <div class="card mobile-help">
-                   <a name="mobile-help"></a>
+                    <a name="mobile-help"></a>
                     <div class="card-cover" id="help">
                         <p>Information</p>
                     </div>
@@ -311,6 +392,10 @@
                                     </div>
                                 </div>
                                 <li>
+                                    <a href="mailto:stephen@whatsthecrack.today" class="button-container" title="Email">
+                                        <i class="fa fa-envelope"></i>Contact us</a>
+                                </li>
+                                <li>
                                     <a href="https://www.facebook.com/whatsthecrack.today/" class="button-container" title="Facebook">
                                         <i class="fa fa-facebook"></i>Facebook</a>
                                 </li>
@@ -326,7 +411,7 @@
                     <div class="card-cover" id="account">
                         <p>Settings</p>
                     </div>
-                    
+
                     <div class="card-content">
                         <div class="button-section">
                             <a class="button-container" title="Page Colour">
@@ -373,6 +458,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
