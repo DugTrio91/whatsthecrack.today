@@ -54,14 +54,15 @@ header{
     -o-background-size: contain;
     height: 200px;
     transition: all .2s ease-in-out;
+    margin-bottom: 5%;
 }
 
 .header-logo:hover{
-    transform: rotate(-5deg);
-    -webkit-transform: rotate(-5deg)
-    -moz-transform: rotate(-5deg)
-    -ms-transform: rotate(-5deg)
-    -o-transform: rotate(-5deg)
+    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
 }
 
 .container{
@@ -209,6 +210,29 @@ header{
 
 .quick-links-banner p{
     padding: 0px 10px 10px 10px;
+}
+
+.durham-works{
+    text-align: center;
+    margin-top:25px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: white;
+    color: #2e2e30;
+}
+
+.dw-icons{
+    height:40px !important;
+    padding-left: 20px;
+    margin: 0px auto;
+}
+
+.durham-works-content{
+    width:40%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 30px;
 }
 
 .cards{
@@ -485,7 +509,7 @@ header{
 	}
 
 	.header-logo{
-		margin-bottom: 30px;
+		margin-bottom: -10px;
 	}
 
 	.greeting{
@@ -515,7 +539,9 @@ header{
 		font-size: 1rem;
 		border-radius: 0 0 10px 10px;
 	}
-
+    .durham-works-content{
+        width: 90%
+    }
 	.desktop{
 		display: none;
 	}
