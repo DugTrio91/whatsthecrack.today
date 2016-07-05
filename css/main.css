@@ -218,7 +218,7 @@ header{
     padding: 25px;
     border-radius: 15px;
     background-color: white;
-    color: #2e2e30;
+    color: #000;
 }
 
 .dw-icons{
@@ -327,12 +327,12 @@ header{
 	margin: 0;
 }
 
-.card-content a{
+.card-content a, .durham-works-content a{
 	color: #000;
 	display: block;
 }
 
-.card-content a:hover{
+.card-content a:hover, .durham-works-content a:hover{
 	color: #666;
 }
 
